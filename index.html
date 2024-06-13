@@ -19,7 +19,7 @@
 
         <header>
             <div class="logo">
-                <img src="./Images_Ohmytfood/logo/ohmyfood.png" alt="logo ohmyfood">
+                <img src="./images/logo/ohmyfood.png" alt="logo ohmyfood">
             </div>
             <form>
                 <i class="fa-solid fa-location-dot"></i>
@@ -43,53 +43,66 @@
                 <h2>Fonctionnement</h2>
 
                 <div class="fonctionnement-container">
-                <ul>
-                    <li>
-                    <button>
-                        <div class="fonctionnement-card">
-                        <i class="fa-solid fa-mobile-screen-button"></i>
-                        <p>Choisissez un restaurant</p>
-                        </div>
-                    </button>
-                    </li>
+                    <ul>
+                        <li>
+                            <input type="radio" name="fonctionnement" id="fonctionnement-1">
+                            <label for="fonctionnement-1">1</label>
+                            <button>
+                                <div class="fonctionnement-card">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                                <p>Choisissez un restaurant</p>
+                                </div>
+                            </button>
+                        </li>
 
-                    <li>
-                    <button>
-                        <div class="fonctionnement-card">
-                        <i class="fa-solid fa-list-ul"></i>
-                        <p>Composez votre menu</p>
-                        </div>
-                    </button>
-                    </li>
+                        <li>
+                            <input type="radio" name="fonctionnement" id="fonctionnement-2">
+                            <label for="fonctionnement-2">2</label>
+                            <button>
+                                <div class="fonctionnement-card">
+                                <i class="fa-solid fa-list-ul"></i>
+                                <p>Composez votre menu</p>
+                                </div>
+                            </button>
+                        </li>
 
-                    <li>
-                    <button>
-                        <div class="fonctionnement-card">
-                        <i class="fa-solid fa-store"></i>
-                        <p>Degustez au restaurant</p>
-                        </div>
-                    </button>
-                    </li>
-                </ul>
+                        <li>
+                            <input type="radio" name="fonctionnement" id="fonctionnement-3">
+                            <label for="fonctionnement-3">3</label>
+                            <button>
+                                <div class="fonctionnement-card">
+                                <i class="fa-solid fa-store"></i>
+                                <p>Degustez au restaurant</p>
+                                </div>
+                            </button>
+                        </li>
+                    </ul>
                 </div>
             </section>
 
             <section class="restaurants">
-                <h2>Restaurants</h2>
-                <div class="restaurants-container">
+                <div class="restaurants-title">
+                <h2 class="restaurants-title">Restaurants</h2>
+                </div>
+                <div class="restaurants-card">
+
                     <a href="./la_palette_du_gout.html">
                         <div class="restaurants-card">
-                            <img src="./Images_Ohmytfood/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg"   alt="La palette du goût">
-                            <div class="restaurants-card-text">
-                                <h3>La palette du goût</h3>
-                                <p>Menilmontant</p>
-                            </div>
+                            <article class="card">
+                                <img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" 
+                                alt="La palette du goût">
+                                <div class="card-text">
+                                    <h3>La palette du goût</h3>
+                                    <p>Ménilmontant</p>
+                                </div>
+                            </article>
                         </div>
                     </a>
 
                     <a href="./la_note_enchantée.html">
                         <div class="restaurants-card">
-                            <img src="./Images_Ohmytfood/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg"   alt="La note enchantée">
+                            <img src="./images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" 
+                            alt="La note enchantée">
                             <div class="restaurants-card-text">
                                 <h3>La note enchantée</h3>
                                 <p>Charonne</p>
@@ -99,7 +112,7 @@
 
                     <a href="./a_la_française.html">
                         <div class="restaurants-card">
-                            <img src="./Images_Ohmytfood/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg"   alt="A la française">
+                            <img src="./images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="A la française">
                             <div class="restaurants-card-text">
                                 <h3>A la française</h3>
                                 <p>Cité Rouge</p>
@@ -107,28 +120,27 @@
                         </div>
                     </a>
 
-                    <a href="./le_delice_des_sens.html">
+                    <a href="./ledelicedessens.html">
                         <div class="restaurants-card">
-                            <img src="./Images_Ohmytfood/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg"   alt="Le délice des sens">
+                            <img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Le délice des sens">
                             <div class="restaurants-card-text">
                                 <h3>Le délice des sens</h3>
-                                <p>Fole-Méricourt</p>
+                                <p>Fole-Mericourt</p>
                             </div>
                         </div>
                     </a>
-                </div>
-            </section>
+
+        <footer>
+            <h3>ohmyfood</h3>
+            <ul>
+                <li><i class="fas fa-utensils"></i>Proposer un restaurant</li>
+                <li><i class="fas fa-hands-helping"></i>Devenir partenaire</li>
+                <li>Mentions légales</li>
+                <li>Contact</li>
+            </ul>
+        </footer>
+
         </main>
-
-
-
-
-
-
-
-
-
-
     </div>
 </body>
 </html>
