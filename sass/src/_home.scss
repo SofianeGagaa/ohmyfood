@@ -136,8 +136,11 @@ main {
         }
 
         .restaurant img {
-            width: 100%;
-             height: 175px;
+            width: 346px;
+            height: 231px;
+            top: -57px;
+            left: -3px
+            border-radius: 25px 25px 0 0;
             object-fit: cover;
         }
 
