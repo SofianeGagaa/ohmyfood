@@ -3,7 +3,9 @@
 $serif: Shrikhand, serif;
 $sans-serif: Roboto, sans-serif;
 
-$white: #fff;
+$white: #FFF;
+$silver: #EAEAEA;
+$gray: #B9B9B9;
 $black: #000;   
 $primary: #9356DC;
 $secondary: #FF79DA;
@@ -44,12 +46,29 @@ a {
     color: inherit;
 }
 
+// ! ********** Header ********** //
+
+header {
+    display: flex;
+    justify-content: center;
+    height: 63px;
+
+    img {
+        width: 162px;
+    }
+}
+
 // ! ********** Footer ********** //
 
 footer {
-    padding: 20px 0;
-    background-color: $black;
+    display: flex;
+    flex-direction: column;
     color: $white;
+    background-color: #353535;
+    width: 375px;
+    height: 186px;
+    padding: 22px 25px 22px 25px;
+    gap: 16px;
 }
 
 // ! ********** Media queries ********** //

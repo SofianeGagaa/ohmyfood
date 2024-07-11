@@ -28,4 +28,34 @@ a {
   color: inherit;
 }
 
+header {
+  display: flex;
+  justify-content: center;
+  height: 63px;
+}
+header img {
+  width: 162px;
+}
+
+footer {
+  padding: 20px 0;
+  background-color: #000;
+  color: #FFF;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  height: 50px;
+  background-color: #EAEAEA;
+  box-shadow: 0 5px 5px #B9B9B9;
+}
+form input {
+  border: none;
+  width: 110px;
+  background-color: #EAEAEA;
+}
+
 /*# sourceMappingURL=home.css.map */
