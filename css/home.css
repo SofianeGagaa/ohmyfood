@@ -1,3 +1,21 @@
+header {
+  display: flex;
+  place-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 10;
+  height: 63px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+}
+header .fa-arrow-left {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+header img {
+  width: 162px;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -20,21 +38,12 @@ ul {
 img {
   max-width: 100%;
   height: auto;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 a {
   text-decoration: none;
   color: inherit;
-}
-
-header {
-  display: flex;
-  justify-content: center;
-  height: 63px;
-}
-header img {
-  width: 162px;
 }
 
 footer {
@@ -50,16 +59,23 @@ footer {
 
 form {
   display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
+  place-content: center;
+  place-items: center;
+  gap: 10px;
+  position: relative;
   height: 50px;
   background-color: #EAEAEA;
-  box-shadow: 0 5px 5px #B9B9B9;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+form label,
+form input {
+  position: relative;
+  left: 10px;
 }
 form input {
   border: none;
-  width: 110px;
+  width: 130px;
+  font-size: 1rem;
   background-color: #EAEAEA;
 }
 
@@ -71,17 +87,17 @@ hgroup {
   margin-bottom: 30px;
 }
 hgroup h1 {
-  font-family: Shrikhand, serif;
+  margin: 0 auto 10px;
+  font-family: Roboto, sans-serif;
   font-size: 28px;
-  margin-bottom: 10px;
 }
 hgroup p {
   font-family: Roboto, sans-serif;
-  font-size: 16px;
-  color: #B9B9B9;
-  max-width: 250px;
   text-align: center;
-  margin-bottom: 30px;
+  margin: auto;
+  width: 310px;
+  font-size: 1.1rem;
+  color: #B9B9B9;
 }
 hgroup .btn {
   background-color: #9356DC;
@@ -119,69 +135,40 @@ main .btn {
   border-radius: 25px;
   box-shadow: 0 5px 5px #B9B9B9;
 }
-main .btn .btn:hover {
-  background-color: #FF79DA;
-}
-main .btn .btn:active {
-  background-color: #99E2D0;
-}
-main .btn .btn:focus {
-  outline: none;
-}
-main .btn .btn:active {
-  transform: scale(0.98);
-}
-main .btn .btn:disabled {
-  background-color: #B9B9B9;
-}
-main .btn .btn:disabled:hover {
-  background-color: #B9B9B9;
-}
-main .btn .btn:disabled:active {
-  background-color: #B9B9B9;
-}
-main .btn .btn:disabled:focus {
-  outline: none;
-}
-main .btn .btn:disabled:active {
-  transform: scale(0.98);
-}
-main .restaurants {
-  width: 90%;
-}
-main .restaurant {
+main [id=restaurants] {
   display: flex;
   flex-direction: column;
   background-color: #EAEAEA;
   border-radius: 25px;
   margin-bottom: 20px;
+  width: 90%;
   box-shadow: 0 5px 5px #B9B9B9;
   overflow: hidden;
 }
-main .restaurant .restaurant:hover {
+main [id=restaurants]:hover {
   transform: scale(1.02);
   box-shadow: 0 10px 10px #B9B9B9;
 }
-main .restaurant .restaurant img {
-  width: 346px;
-  height: 231px;
+main [id=restaurants] img {
+  width: 100%;
+  height: 200px;
   top: -57px;
   left: -3px;
-  border-radius: 25px 25px 0 0;
+  border-radius: 15px 15px 0 0;
   object-fit: cover;
 }
-main .restaurant .restaurant h3 {
+main [id=restaurants] .restaurant h3 {
   font-family: Shrikhand, serif;
   font-size: 18px;
   margin: 10px;
 }
-main .restaurant .restaurant p {
+main [id=restaurants] .restaurant p {
   font-family: Roboto, sans-serif;
   font-size: 14px;
   color: #B9B9B9;
   margin: 10px;
 }
-main .restaurant .restaurant .new {
+main [id=restaurants] .restaurant .new {
   background-color: #99E2D0;
   color: #FFF;
   padding: 5px 10px;

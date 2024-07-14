@@ -13,6 +13,27 @@ $tertiary: #99E2D0;
 
 // ! ********** MIXINS ********** //
 
+// ! ********** Header ********** //
+header {
+    display: flex;
+    place-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 10;
+    height: 63px;
+    box-shadow: 0 2px 4px rgba( 0, 0, 0, 0.15 );
+
+    .fa-arrow-left {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+
+    img {
+        width: 162px;
+    }
+}
+
 
 // ! ********** MAIN ********** //
 
@@ -38,26 +59,13 @@ ul {
 img {
     max-width: 100%;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
 }
 
 a {
     text-decoration: none;
     color: inherit;
 }
-
-// ! ********** Header ********** //
-
-header {
-    display: flex;
-    justify-content: center;
-    height: 63px;
-
-    img {
-        width: 162px;
-    }
-}
-
 // ! ********** Footer ********** //
 
 footer {

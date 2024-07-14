@@ -1,19 +1,31 @@
+
+// ! ********** FORM ********** //
 form {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
+    place-content: center;
+    place-items: center;
+    gap: 10px;
+    position: relative;
     height: 50px;
     background-color: $silver;
-    box-shadow: 0 5px 5px $gray;
+    box-shadow: 0 4px 4px rgba( 0, 0, 0, 0.25 );
+
+    label,
+    input {
+        position: relative;
+        left: 10px;
+    }
 
     input {
         border: none;
-        width: 110px;
+        width: 130px;
+        font-size: 1rem;
         background-color: $silver;
     }
-
 }
+
+
+// ! ********** MAIN ********** //
 
 hgroup {
     display: flex;
@@ -23,19 +35,19 @@ hgroup {
     margin-bottom: 30px;
 
     h1 {
-
-        font-family: $serif;
+        margin: 0 auto 10px;
+        font-family: $sans-serif;
         font-size: 28px;
-        margin-bottom: 10px;
+        // margin-bottom: 10px;
     }
 
     p {
-         font-family: $sans-serif;
-        font-size: 16px;
-        color: $gray;
-        max-width: 250px;
+        font-family: $sans-serif;
         text-align: center;
-        margin-bottom: 30px;
+        margin: auto;
+        width: 310px;
+        font-size: 1.1rem;
+        color: $gray;
     }
 
     .btn {
@@ -54,6 +66,8 @@ hgroup {
         background-color: $tertiary;
     }
 }
+
+
 
 main {
     display: flex;
@@ -79,68 +93,65 @@ main {
         border-radius: 25px;
         box-shadow: 0 5px 5px $gray;
 
-        .btn:hover {
-            background-color: $secondary;
-        }
+        // .btn:hover {
+        //     background-color: $secondary;
+        // }
 
-        .btn:active {
-            background-color: $tertiary;
-        }    
+        // .btn:active {
+        //     background-color: $tertiary;
+        // }    
 
-         .btn:focus {
-            outline: none;
-        }
+        //  .btn:focus {
+        //     outline: none;
+        // }
 
-        .btn:active {
-            transform: scale(0.98);
-        }
+        // .btn:active {
+        //     transform: scale(0.98);
+        // }
 
-         .btn:disabled {
-            background-color: $gray;
-        }
+        //  .btn:disabled {
+        //     background-color: $gray;
+        // }
 
-        .btn:disabled:hover {
-            background-color: $gray;
-        }  
+        // .btn:disabled:hover {
+        //     background-color: $gray;
+        // }  
 
-        .btn:disabled:active {
-            background-color: $gray;
-        }
+        // .btn:disabled:active {
+        //     background-color: $gray;
+        // }
 
-        .btn:disabled:focus {
-            outline: none;
-        }
+        // .btn:disabled:focus {
+        //     outline: none;
+        // }
 
-        .btn:disabled:active {
-            transform: scale(0.98);
-        }
+        // .btn:disabled:active {
+        //     transform: scale(0.98);
+        // }
 
     }
 
-    .restaurants {
-        width: 90%;
-    }
-
-    .restaurant {
+    [id=restaurants] {
         display: flex;
         flex-direction: column;
         background-color: $silver;
         border-radius: 25px;
         margin-bottom: 20px;
+        width: 90%;
         box-shadow: 0 5px 5px $gray;
         overflow: hidden;
 
-        .restaurant:hover {
+        &:hover {
             transform: scale(1.02);
             box-shadow: 0 10px 10px $gray;
         }
 
-        .restaurant img {
-            width: 346px;
-            height: 231px;
+        img {
+            width: 100%;
+            height: 200px;
             top: -57px;
             left: -3px;
-            border-radius: 25px 25px 0 0;
+            border-radius: 15px 15px 0 0;
             object-fit: cover;
         }
 
