@@ -1,3 +1,4 @@
+@charset "UTF-8";
 header {
   display: flex;
   place-content: center;
@@ -16,47 +17,81 @@ header img {
   width: 162px;
 }
 
-html {
-  scroll-behavior: smooth;
+.btn {
+  display: block;
+  margin: 30px auto;
+  border: none;
+  border-radius: 25px;
+  padding: 15px 25px;
+  width: 200px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-image: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  color: #FFF;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}
+.btn :hover, .btn :focus {
+  opacity: 0.9;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-body,
-ul,
-figure {
-  margin: 0;
+.heart .fa-heart {
+  position: absolute;
+  z-index: 100;
+  font-size: 1.35rem;
+  cursor: pointer;
 }
-
-body {
-  font-family: Roboto, sans-serif;
-}
-
-ul {
-  padding: 0;
-  list-style: none;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-a {
-  text-decoration: none;
-  color: inherit;
+.heart .fa-solid {
+  opacity: 0;
+  transition: opacity 3s;
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
 }
 
 footer {
   display: flex;
   flex-direction: column;
-  color: #FFF;
+  gap: 15px;
+  padding: 25px;
   background-color: #353535;
-  width: 375px;
-  height: 186px;
-  padding: 22px 25px 22px 25px;
-  gap: 16px;
+  color: #FFF;
+}
+footer h3 {
+  font-family: Shrikhand, serif;
+}
+footer ul {
+  display: flex;
+  flex-flow: column;
+  gap: 10px;
 }
 
+/* ********** TABLET ********** */
+@media (min-width: 48rem) {
+  footer {
+    flex-flow: row-reverse;
+    place-items: center;
+    padding: 20px 50px;
+  }
+  footer ul {
+    width: 100%;
+  }
+}
+/* ********** DESKTOP ********** */
+@media (min-width: 64rem) {
+  footer {
+    gap: 80px;
+  }
+  footer ul {
+    flex-flow: row;
+    place-content: flex-end;
+  }
+  footer li:nth-child(2) {
+    margin-right: 40px;
+  }
+}
 form {
   display: flex;
   place-content: center;
@@ -65,6 +100,7 @@ form {
   position: relative;
   height: 50px;
   background-color: #EAEAEA;
+  color: slategray;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 form label,
@@ -77,120 +113,153 @@ form input {
   width: 130px;
   font-size: 1rem;
   background-color: #EAEAEA;
+  color: §slategray;
 }
 
 hgroup {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 30px;
-  margin-bottom: 30px;
+  padding: 40px 20px 10px;
+  text-align: center;
+  background-color: #EAEAEA;
 }
 hgroup h1 {
   margin: 0 auto 10px;
-  font-family: Roboto, sans-serif;
-  font-size: 28px;
+  width: 280px;
+  font-size: 1.5rem;
 }
 hgroup p {
-  font-family: Roboto, sans-serif;
-  text-align: center;
   margin: auto;
   width: 310px;
   font-size: 1.1rem;
   color: #B9B9B9;
 }
-hgroup .btn {
-  background-color: #9356DC;
-  color: #FFF;
-  padding: 10px 20px;
-  border-radius: 25px;
-  box-shadow: 0 5px 5px #B9B9B9;
-}
-hgroup .btn:hover {
-  background-color: #FF79DA;
-}
-hgroup .btn:active {
-  background-color: #99E2D0;
+hgroup a {
+  font-size: 1rem;
 }
 
-main {
+section {
+  padding: 50px 20px;
+}
+section ol {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-bottom: 50px;
+  flex-flow: wrap;
+  gap: 25px;
+  margin: 20px 0;
+  padding: 10px;
+  counter-reset: li;
 }
-main h2 {
-  font-family: Shrikhand, serif;
-  font-size: 24px;
-  margin-bottom: 20px;
-}
-main .functioning {
-  width: 90%;
-  margin-bottom: 30px;
-}
-main .btn {
-  background-color: #9356DC;
-  color: #FFF;
-  padding: 10px 20px;
-  border-radius: 25px;
-  box-shadow: 0 5px 5px #B9B9B9;
-}
-main [id=restaurants] {
+section li {
   display: flex;
-  flex-direction: column;
-  background-color: #EAEAEA;
-  border-radius: 25px;
-  margin-bottom: 20px;
-  width: 90%;
-  box-shadow: 0 5px 5px #B9B9B9;
-  overflow: hidden;
-}
-main [id=restaurants]:hover {
-  transform: scale(1.02);
-  box-shadow: 0 10px 10px #B9B9B9;
-}
-main [id=restaurants] img {
+  place-items: center;
+  gap: 20px;
+  position: relative;
+  border-radius: 20px;
+  padding: 30px 40px;
   width: 100%;
-  height: 200px;
-  top: -57px;
-  left: -3px;
-  border-radius: 15px 15px 0 0;
-  object-fit: cover;
+  background: #f6f6f6;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
 }
-main [id=restaurants] .restaurant h3 {
-  font-family: Shrikhand, serif;
-  font-size: 18px;
-  margin: 10px;
-}
-main [id=restaurants] .restaurant p {
-  font-family: Roboto, sans-serif;
-  font-size: 14px;
-  color: #B9B9B9;
-  margin: 10px;
-}
-main [id=restaurants] .restaurant .new {
+section li::before {
+  display: flex;
+  place-content: center;
+  place-items: center;
+  position: absolute;
+  left: -12px;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  counter-increment: li;
+  content: counters(li, ".", decimal-leading-zero);
   background-color: #99E2D0;
   color: #FFF;
-  padding: 5px 10px;
-  border-radius: 3px;
-  position: absolute;
-  top: 10px;
-  right: 10px;
 }
-main .fa-regular.fa-heart {
-  color: #9356DC; /* Set the initial color to red */
+section li i {
+  font-size: 1.5rem;
+  color: #B9B9B9;
+}
+section li:hover i, section li:focus i {
+  color: #9356DC;
+}
+
+article {
+  padding: 50px 20px;
+  background-color: #EAEAEA;
+}
+article ul {
+  display: flex;
+  flex-flow: wrap;
+  gap: 20px;
+  padding: 20px 0;
+}
+article li {
+  width: 100%;
+}
+article figure {
   position: relative;
-  overflow: hidden;
 }
-main .fa-regular.fa-heart::before {
-  content: "";
+article b {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 0;
-  height: 100%;
-  background-color: #9356DC; /* Set the background color to red */
-  animation: fillHeart 2s infinite; /* Animation to gradually fill the heart */
+  top: 15px;
+  right: 15px;
+  border-radius: 2px;
+  padding: 7px 9px;
+  background-color: #99E2D0;
+  color: #006b50;
+}
+article img {
+  border-radius: 15px 15px 0 0;
+  width: 100%;
+  height: 200px;
+}
+article figcaption {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+  position: relative;
+  margin-top: -5px;
+  border-radius: 0 0 15px 15px;
+  padding: 15px;
+  background-color: #FFF;
+}
+article .fa-heart {
+  top: 20px;
+  right: 20px;
+}
+
+/* ********** TABLET ********** */
+@media (min-width: 48rem) {
+  hgroup {
+    padding: 40px 20px 10px;
+  }
+  hgroup h1,
+  hgroup p {
+    width: fit-content;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  section {
+    padding: 50px;
+  }
+  article {
+    padding: 50px;
+  }
+  article ul {
+    gap: 50px;
+  }
+}
+/* ********** DESKTOP ********** */
+@media (min-width: 64rem) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  section {
+    margin: auto;
+    max-width: 1080px;
+  }
+  section ol {
+    flex-flow: nowrap;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */
