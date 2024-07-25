@@ -15,6 +15,7 @@ header .fa-arrow-left {
 }
 header img {
   width: 162px;
+  color: #363636;
 }
 
 .btn {
@@ -26,10 +27,11 @@ header img {
   width: 200px;
   font-size: 1rem;
   font-weight: bold;
-  background-image: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
-  color: #FFF;
+  background-image: linear-gradient(180deg, #ff7ad9 0%, #9256dc 100%);
+  color: #ffffff;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  text-decoration: none;
 }
 .btn :hover, .btn :focus {
   opacity: 0.9;
@@ -45,7 +47,7 @@ header img {
 .heart .fa-solid {
   opacity: 0;
   transition: opacity 3s;
-  background-image: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
+  background-image: linear-gradient(to bottom, #ff7ad9, #9256dc 80%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -56,8 +58,8 @@ footer {
   flex-direction: column;
   gap: 15px;
   padding: 25px;
-  background-color: #353535;
-  color: #FFF;
+  background-color: #363636;
+  color: #ffffff;
 }
 footer h3 {
   font-family: Shrikhand, serif;
@@ -92,6 +94,27 @@ footer ul {
     margin-right: 40px;
   }
 }
+.loader {
+  position: fixed;
+  z-index: 1000;
+  width: 0%;
+  height: 0%;
+  background-color: #363636;
+  animation: cover 1s;
+}
+.loader [class*=fa-stack] {
+  top: calc(50% - 160px);
+  left: calc(50% - 200px);
+  opacity: 0;
+  animation: rotate 1s linear;
+}
+.loader .fa-stack-1x {
+  color: #abe7d8;
+}
+.loader .fa-stack-2x {
+  color: #9256dc;
+}
+
 form {
   display: flex;
   place-content: center;
@@ -99,8 +122,8 @@ form {
   gap: 10px;
   position: relative;
   height: 50px;
-  background-color: #EAEAEA;
-  color: slategray;
+  background-color: #ebebeb;
+  color: #363636;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 form label,
@@ -112,14 +135,14 @@ form input {
   border: none;
   width: 130px;
   font-size: 1rem;
-  background-color: #EAEAEA;
-  color: §slategray;
+  background-color: #ebebeb;
+  color: §slate;
 }
 
 hgroup {
   padding: 40px 20px 10px;
   text-align: center;
-  background-color: #EAEAEA;
+  background-color: #f7f7f7;
 }
 hgroup h1 {
   margin: 0 auto 10px;
@@ -130,7 +153,7 @@ hgroup p {
   margin: auto;
   width: 310px;
   font-size: 1.1rem;
-  color: #B9B9B9;
+  color: #363636;
 }
 hgroup a {
   font-size: 1rem;
@@ -170,20 +193,19 @@ section li::before {
   height: 24px;
   counter-increment: li;
   content: counters(li, ".", decimal-leading-zero);
-  background-color: #99E2D0;
-  color: #FFF;
+  background-color: #9256dc;
+  color: #ffffff;
 }
 section li i {
-  font-size: 1.5rem;
-  color: #B9B9B9;
+  color: #7d7d7d;
 }
 section li:hover i, section li:focus i {
-  color: #9356DC;
+  color: #9256dc;
 }
 
 article {
   padding: 50px 20px;
-  background-color: #EAEAEA;
+  background-color: #f7f7f7;
 }
 article ul {
   display: flex;
@@ -203,7 +225,7 @@ article b {
   right: 15px;
   border-radius: 2px;
   padding: 7px 9px;
-  background-color: #99E2D0;
+  background-color: #abe7d8;
   color: #006b50;
 }
 article img {
@@ -219,7 +241,7 @@ article figcaption {
   margin-top: -5px;
   border-radius: 0 0 15px 15px;
   padding: 15px;
-  background-color: #FFF;
+  background-color: #ffffff;
 }
 article .fa-heart {
   top: 20px;
@@ -259,6 +281,11 @@ article .fa-heart {
   }
   section ol {
     flex-flow: nowrap;
+  }
+  section h2,
+  section ul {
+    margin: auto;
+    max-width: 1080px;
   }
 }
 

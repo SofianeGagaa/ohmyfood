@@ -1,4 +1,30 @@
 
+// ! ********** LOADER ********** //
+
+.loader {
+    position: fixed;
+    z-index: 1000;
+    width: 0%;
+    height: 0%;
+    background-color: $slate;
+    animation: cover 1s;
+
+    [class*="fa-stack"] {
+        top: calc(50% - 160px);
+        left: calc(50% - 200px);
+        opacity: 0;
+        animation: rotate 1s linear;    
+    }
+
+    .fa-stack-1x {
+        color: $tertiary;
+    }
+
+    .fa-stack-2x {
+        color: $primary;
+    }
+}
+
 // ! ********** FORM ********** //
 form {
     display: flex;
@@ -7,8 +33,8 @@ form {
     gap: 10px;
     position: relative;
     height: 50px;
-    background-color: $silver;
-    color: slategray;
+    background-color: $lightgrey;
+    color: $slate;
     box-shadow: 0 4px 4px rgba( 0, 0, 0, 0.25 );
 
     label,
@@ -21,8 +47,8 @@ form {
         border: none;
         width: 130px;
         font-size: 1rem;
-        background-color: $silver;
-        color: §slategray;
+        background-color: $lightgrey;
+        color: §slate;
     }
 }
 
@@ -43,7 +69,7 @@ hgroup {
         margin: auto;
         width: 310px;
         font-size: 1.1rem;
-        color: $gray;
+        color: $slate;
     }
 
     a {
@@ -86,13 +112,12 @@ section {
             height: 24px;
             counter-increment: li;
             content: counters(li, ".", decimal-leading-zero);
-            background-color: $tertiary;
+            background-color: $primary;
             color: $white;
         }
 
         i {
-            font-size: 1.5rem;
-            color: $gray;
+            color: $darkgray;
         }
 
         &:hover i,
@@ -100,7 +125,6 @@ section {
             color: $primary;
         }
     }
-
 }
 
 article {
@@ -153,8 +177,8 @@ article {
         top: 20px;
         right: 20px;
     }
-
 }
+
 
 // ! ********** MEDIA QUERIES ********** //
 
@@ -185,7 +209,7 @@ article {
             gap: 50px;
          
             // li {
-            //     width: calc ((100% - 50px) / 2);
+                // width: calc ((100% - 50px) / 2);
             // }
         }
     }
@@ -204,6 +228,12 @@ article {
 
         ol {
             flex-flow: nowrap;
+        }
+
+        h2,
+        ul {
+            margin: auto;
+            max-width: 1080px;
         }
     }
 }

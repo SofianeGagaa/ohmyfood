@@ -14,6 +14,7 @@ header .fa-arrow-left {
 }
 header img {
   width: 162px;
+  color: #363636;
 }
 
 .btn {
@@ -25,10 +26,11 @@ header img {
   width: 200px;
   font-size: 1rem;
   font-weight: bold;
-  background-image: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
-  color: #FFF;
+  background-image: linear-gradient(180deg, #ff7ad9 0%, #9256dc 100%);
+  color: #ffffff;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+  text-decoration: none;
 }
 .btn :hover, .btn :focus {
   opacity: 0.9;
@@ -44,7 +46,7 @@ header img {
 .heart .fa-solid {
   opacity: 0;
   transition: opacity 3s;
-  background-image: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
+  background-image: linear-gradient(to bottom, #ff7ad9, #9256dc 80%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -55,8 +57,8 @@ footer {
   flex-direction: column;
   gap: 15px;
   padding: 25px;
-  background-color: #353535;
-  color: #FFF;
+  background-color: #363636;
+  color: #ffffff;
 }
 footer h3 {
   font-family: Shrikhand, serif;
@@ -96,7 +98,7 @@ article {
   flex-direction: column;
   gap: 40px;
   padding-bottom: 20px;
-  background-color: #EAEAEA;
+  background-color: #f7f7f7;
 }
 article > hgroup {
   position: relative;
@@ -109,7 +111,7 @@ article > hgroup h1 {
   padding: 35px 15px 0 0;
   font-family: Shrikhand, serif;
   font-size: 1.7rem;
-  background-color: #EAEAEA;
+  background-color: #f7f7f7;
 }
 article > hgroup .fa-heart {
   top: 5px;
@@ -145,7 +147,7 @@ section div {
   margin-top: -8px;
   width: 40px;
   height: 3px;
-  background-color: #99E2D0;
+  background-color: #abe7d8;
 }
 section ul {
   display: flex;
@@ -160,7 +162,7 @@ section li {
   box-sizing: border-box;
   border-radius: 15px;
   height: 80px;
-  background-color: #FFF;
+  background-color: #ffffff;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
   cursor: pointer;
 }
@@ -195,8 +197,8 @@ section .fa-circle-check {
   margin-right: -60px;
   padding: 0 20px;
   height: 100%;
-  background-color: #99E2D0;
-  color: #FFF;
+  background-color: #abe7d8;
+  color: #ffffff;
   transition: margin-right 0.5s;
 }
 section li:hover .fa-circle-check,
@@ -229,10 +231,10 @@ section li:focus .fa-circle-check {
   article {
     margin: auto;
     max-width: 1080px;
-    background-color: #EAEAEA;
+    background-color: #f7f7f7;
   }
   main {
-    background-color: #FFF;
+    background-color: #ffffff;
   }
 }
 
