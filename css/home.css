@@ -1,4 +1,30 @@
 @charset "UTF-8";
+body,
+ul,
+figure {
+  margin: 0;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+[type=checkbox] {
+  display: none;
+}
+
 header {
   display: flex;
   place-content: center;
@@ -192,7 +218,7 @@ section li::before {
   width: 24px;
   height: 24px;
   counter-increment: li;
-  content: counters(li, ".", decimal-leading-zero);
+  content: counters(li, ".") "";
   background-color: #9256dc;
   color: #ffffff;
 }

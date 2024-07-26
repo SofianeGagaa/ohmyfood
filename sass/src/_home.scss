@@ -111,7 +111,7 @@ section {
             width: 24px;
             height: 24px;
             counter-increment: li;
-            content: counters(li, ".", decimal-leading-zero);
+            content: counters(li, ".") "";
             background-color: $primary;
             color: $white;
         }

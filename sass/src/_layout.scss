@@ -6,7 +6,6 @@ $lg: 64rem;
 
 // ! ********** FONTS ********** //
 
-$font: 'Roboto', Shrikhand, sans-serif;
 $serif: Shrikhand, serif;
 $sans-serif: Roboto, sans-serif;
 
@@ -24,6 +23,35 @@ $lightgrey: #ebebeb;
 $darkgray: #7d7d7d;
 $slate: #363636;
 $black: #000000;  
+
+
+// ! ********** Body ********** //
+
+body,
+ul,
+figure {
+    margin: 0;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+[type=checkbox] {
+    display: none;
+}
 
 // ! ********** Header ********** //
 header {
