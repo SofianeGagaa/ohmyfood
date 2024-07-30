@@ -1,7 +1,7 @@
 // ! ********** VARIABLES (FONTS & COLORS) ********** //
 
-/***** $md: 48rem;****/
-/***** $lg: 64rem; *****/
+// $md: 48rem;
+// $lg: 64rem;
 
 
 $serif: Shrikhand, serif; //***** Logo & Titles
@@ -142,7 +142,7 @@ footer {
 
 /* ********** TABLET ********** */
 
-/***** @media (min-width: $md) {
+@media (min-width: 768px) {
         footer {
             flex-flow: row-reverse;
             place-items: center;
@@ -152,11 +152,12 @@ footer {
             width: 100%;
         }
     }
-} */
+}
 
 /* ********** DESKTOP ********** */
+@media (min-width: 1024px) {
 
-/*****@media (min-width: $lg) {
+
     footer {
         gap: 80px;
 
@@ -164,8 +165,8 @@ footer {
             flex-flow: row;
             place-content: flex-end;
         }
-        li:nth-child(2) {
+        /*li:nth-child(2) {
             margin-right: 40px;
-        }
+        }*/
     }
-} ******/   
+}
