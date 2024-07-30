@@ -29,7 +29,7 @@ article {
     }   
 }
 
-// ! ********** Main **********  //
+// ! ********** MAIN **********  //
 
 main {
 
@@ -63,6 +63,8 @@ section {
     h2 {
         font-size: 1rem;
         text-transform: uppercase;
+        padding-bottom: 0;
+        margin-bottom: 0;
     }
 
     div {
@@ -89,6 +91,7 @@ section {
         background-color: $white;
         box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
         cursor: pointer;
+        margin-top: 0;
     }
 
     hgroup,
@@ -103,18 +106,21 @@ section {
         padding: 10px 0 10px 20px;
 
         h3 {
-            margin-bottom: 5px;
+            margin-bottom: 0;
+            margin-top: 5px;
             font-size: 1.125rem;
         }
 
         p {
             font-size: 0.9rem;
+            margin-top: 2px;
         }
     }
 
     span {
         display: flex;
-        gap: 10px;
+        gap: 15px;
+        padding: 30px 0 10px 0;
     }
 
     b {
@@ -142,43 +148,43 @@ section {
 
 /* ********** TABLET ********** */
 
-@media (min-width: $md) {
-    article > hgroup {
-        text-align: center;
-    }
+// @media (min-width: $md) {
+//     article > hgroup {
+//         text-align: center;
+//     }
 
-    .heart .fa-heart {
-        position: relative;
-        top: -31px;
-    }
+//     .heart .fa-heart {
+//         position: relative;
+//         top: -31px;
+//     }
 
-    .fa-solid .fa-heart {
-        left: 170px;
-    }
+//     .fa-solid .fa-heart {
+//         left: 170px;
+//     }
 
-    .fa-regular .fa-heart {
-        left: 195px;
-    }
+//     .fa-regular .fa-heart {
+//         left: 195px;
+//     }
 
-    section {
-        margin: auto;
-        width: 634px;
-    }
-}
+//     section {
+//         margin: auto;
+//         width: 634px;
+//     }
+// }
 
 /* ********** DESKTOP ********** */
 
-@media (min-width: $lg) {
-    article {
-        margin: auto;
-        max-width: 1080px;
-        background-color: $silver;
-    }
+// @media (min-width: $lg) {
+//     article {
+//         margin: auto;
+//         max-width: 1080px;
+//         background-color: $silver;
+//     }
 
-    main {
-        background-color: $white;
-    }
-}
+//     main {
+//         background-color: $white;
+//     }
+// }
 
 
 

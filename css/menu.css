@@ -1,3 +1,5 @@
+/***** $md: 48rem;****/
+/***** $lg: 64rem; *****/
 body,
 ul,
 figure {
@@ -52,8 +54,8 @@ header img {
   width: 200px;
   font-size: 1rem;
   font-weight: bold;
-  background-image: linear-gradient(180deg, #ff7ad9 0%, #9256dc 100%);
-  color: #ffffff;
+  background-image: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  color: #FFFFFF;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   text-decoration: none;
@@ -72,7 +74,7 @@ header img {
 .heart .fa-solid {
   opacity: 0;
   transition: opacity 3s;
-  background-image: linear-gradient(to bottom, #ff7ad9, #9256dc 80%);
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -84,7 +86,7 @@ footer {
   gap: 15px;
   padding: 25px;
   background-color: #363636;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 footer h3 {
   font-family: Shrikhand, serif;
@@ -96,35 +98,37 @@ footer ul {
 }
 
 /* ********** TABLET ********** */
-@media (min-width: 48rem) {
-  footer {
-    flex-flow: row-reverse;
-    place-items: center;
-    padding: 20px 50px;
-  }
-  footer ul {
-    width: 100%;
-  }
-}
+/***** @media (min-width: $md) {
+        footer {
+            flex-flow: row-reverse;
+            place-items: center;
+            padding: 20px 50px;
+
+        ul {
+            width: 100%;
+        }
+    }
+} */
 /* ********** DESKTOP ********** */
-@media (min-width: 64rem) {
-  footer {
-    gap: 80px;
-  }
-  footer ul {
-    flex-flow: row;
-    place-content: flex-end;
-  }
-  footer li:nth-child(2) {
-    margin-right: 40px;
-  }
-}
+/*****@media (min-width: $lg) {
+    footer {
+        gap: 80px;
+
+        ul {
+            flex-flow: row;
+            place-content: flex-end;
+        }
+        li:nth-child(2) {
+            margin-right: 40px;
+        }
+    }
+} ******/
 article {
   display: flex;
   flex-direction: column;
   gap: 40px;
   padding-bottom: 20px;
-  background-color: #f7f7f7;
+  background-color: #F7F7F7;
 }
 article > hgroup {
   position: relative;
@@ -137,7 +141,7 @@ article > hgroup h1 {
   padding: 35px 15px 0 0;
   font-family: Shrikhand, serif;
   font-size: 1.7rem;
-  background-color: #f7f7f7;
+  background-color: #F7F7F7;
 }
 article > hgroup .fa-heart {
   top: 5px;
@@ -168,12 +172,14 @@ section:nth-child(4) {
 section h2 {
   font-size: 1rem;
   text-transform: uppercase;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 section div {
   margin-top: -8px;
   width: 40px;
   height: 3px;
-  background-color: #abe7d8;
+  background-color: #99E2D0;
 }
 section ul {
   display: flex;
@@ -188,9 +194,10 @@ section li {
   box-sizing: border-box;
   border-radius: 15px;
   height: 80px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
   cursor: pointer;
+  margin-top: 0;
 }
 section hgroup,
 section hgroup h3 hgroup p {
@@ -202,15 +209,18 @@ section hgroup {
   padding: 10px 0 10px 20px;
 }
 section hgroup h3 {
-  margin-bottom: 5px;
+  margin-bottom: 0;
+  margin-top: 5px;
   font-size: 1.125rem;
 }
 section hgroup p {
   font-size: 0.9rem;
+  margin-top: 2px;
 }
 section span {
   display: flex;
-  gap: 10px;
+  gap: 15px;
+  padding: 30px 0 10px 0;
 }
 section b {
   place-self: flex-end;
@@ -223,8 +233,8 @@ section .fa-circle-check {
   margin-right: -60px;
   padding: 0 20px;
   height: 100%;
-  background-color: #abe7d8;
-  color: #ffffff;
+  background-color: #99E2D0;
+  color: #FFFFFF;
   transition: margin-right 0.5s;
 }
 section li:hover .fa-circle-check,
@@ -233,35 +243,6 @@ section li:focus .fa-circle-check {
 }
 
 /* ********** TABLET ********** */
-@media (min-width: 48rem) {
-  article > hgroup {
-    text-align: center;
-  }
-  .heart .fa-heart {
-    position: relative;
-    top: -31px;
-  }
-  .fa-solid .fa-heart {
-    left: 170px;
-  }
-  .fa-regular .fa-heart {
-    left: 195px;
-  }
-  section {
-    margin: auto;
-    width: 634px;
-  }
-}
 /* ********** DESKTOP ********** */
-@media (min-width: 64rem) {
-  article {
-    margin: auto;
-    max-width: 1080px;
-    background-color: #f7f7f7;
-  }
-  main {
-    background-color: #ffffff;
-  }
-}
 
 /*# sourceMappingURL=menu.css.map */

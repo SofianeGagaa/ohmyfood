@@ -124,27 +124,29 @@ footer ul {
         }
     }
 } ******/
-.loader {
-  position: fixed;
-  z-index: 1000;
-  width: 0%;
-  height: 0%;
-  background-color: #363636;
-  animation: cover 1s;
-}
-.loader [class*=fa-stack] {
-  top: calc(50% - 160px);
-  left: calc(50% - 200px);
-  opacity: 0;
-  animation: rotate 1s linear;
-}
-.loader .fa-stack-1x {
-  color: #99E2D0;
-}
-.loader .fa-stack-2x {
-  color: #9356DC;
-}
+/*.loader {
+    position: fixed;
+    z-index: 1000;
+    width: 0%;
+    height: 0%;
+    background-color: $slate;
+    animation: cover 1s;
 
+    [class*="fa-stack"] {
+        top: calc(50% - 160px);
+        left: calc(50% - 200px);
+        opacity: 0;
+        animation: rotate 1s linear;    
+    }
+
+    .fa-stack-1x {
+        color: $tertiary;
+    }
+
+    .fa-stack-2x {
+        color: $primary;
+    }
+}*/
 form {
   display: flex;
   place-content: center;
