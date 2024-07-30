@@ -184,7 +184,7 @@ article {
 
 /* ********** TABLET ********** */
 
-@media (min-width: $md) {
+/**** @media (min-width: $md) {
     hgroup {
         padding: 40px 20px 10px;
 
@@ -213,11 +213,11 @@ article {
             // }
         }
     }
-}
+} *****/
 
 /* ********** DESKTOP ********** */
 
-@media (min-width: $lg) {
+/***** @media (min-width: $lg) {
     h1 {
         font-size: 2.5rem;
     }
@@ -236,4 +236,4 @@ article {
             max-width: 1080px;
         }
     }
-}
+} *****/

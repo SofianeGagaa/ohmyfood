@@ -1,4 +1,6 @@
 @charset "UTF-8";
+/***** $md: 48rem;****/
+/***** $lg: 64rem; *****/
 body,
 ul,
 figure {
@@ -53,8 +55,8 @@ header img {
   width: 200px;
   font-size: 1rem;
   font-weight: bold;
-  background-image: linear-gradient(180deg, #ff7ad9 0%, #9256dc 100%);
-  color: #ffffff;
+  background-image: linear-gradient(180deg, #FF79DA 0%, #9356DC 100%);
+  color: #FFFFFF;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   cursor: pointer;
   text-decoration: none;
@@ -73,7 +75,7 @@ header img {
 .heart .fa-solid {
   opacity: 0;
   transition: opacity 3s;
-  background-image: linear-gradient(to bottom, #ff7ad9, #9256dc 80%);
+  background-image: linear-gradient(to bottom, #FF79DA, #9356DC 80%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
@@ -85,7 +87,7 @@ footer {
   gap: 15px;
   padding: 25px;
   background-color: #363636;
-  color: #ffffff;
+  color: #FFFFFF;
 }
 footer h3 {
   font-family: Shrikhand, serif;
@@ -97,29 +99,31 @@ footer ul {
 }
 
 /* ********** TABLET ********** */
-@media (min-width: 48rem) {
-  footer {
-    flex-flow: row-reverse;
-    place-items: center;
-    padding: 20px 50px;
-  }
-  footer ul {
-    width: 100%;
-  }
-}
+/***** @media (min-width: $md) {
+        footer {
+            flex-flow: row-reverse;
+            place-items: center;
+            padding: 20px 50px;
+
+        ul {
+            width: 100%;
+        }
+    }
+} */
 /* ********** DESKTOP ********** */
-@media (min-width: 64rem) {
-  footer {
-    gap: 80px;
-  }
-  footer ul {
-    flex-flow: row;
-    place-content: flex-end;
-  }
-  footer li:nth-child(2) {
-    margin-right: 40px;
-  }
-}
+/*****@media (min-width: $lg) {
+    footer {
+        gap: 80px;
+
+        ul {
+            flex-flow: row;
+            place-content: flex-end;
+        }
+        li:nth-child(2) {
+            margin-right: 40px;
+        }
+    }
+} ******/
 .loader {
   position: fixed;
   z-index: 1000;
@@ -135,10 +139,10 @@ footer ul {
   animation: rotate 1s linear;
 }
 .loader .fa-stack-1x {
-  color: #abe7d8;
+  color: #99E2D0;
 }
 .loader .fa-stack-2x {
-  color: #9256dc;
+  color: #9356DC;
 }
 
 form {
@@ -148,7 +152,7 @@ form {
   gap: 10px;
   position: relative;
   height: 50px;
-  background-color: #ebebeb;
+  background-color: #EBEBEB;
   color: #363636;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -161,14 +165,14 @@ form input {
   border: none;
   width: 130px;
   font-size: 1rem;
-  background-color: #ebebeb;
+  background-color: #EBEBEB;
   color: §slate;
 }
 
 hgroup {
   padding: 40px 20px 10px;
   text-align: center;
-  background-color: #f7f7f7;
+  background-color: #F7F7F7;
 }
 hgroup h1 {
   margin: 0 auto 10px;
@@ -219,19 +223,19 @@ section li::before {
   height: 24px;
   counter-increment: li;
   content: counters(li, ".") "";
-  background-color: #9256dc;
-  color: #ffffff;
+  background-color: #9356DC;
+  color: #FFFFFF;
 }
 section li i {
-  color: #7d7d7d;
+  color: #7D7D7D;
 }
 section li:hover i, section li:focus i {
-  color: #9256dc;
+  color: #9356DC;
 }
 
 article {
   padding: 50px 20px;
-  background-color: #f7f7f7;
+  background-color: #F7F7F7;
 }
 article ul {
   display: flex;
@@ -251,8 +255,8 @@ article b {
   right: 15px;
   border-radius: 2px;
   padding: 7px 9px;
-  background-color: #abe7d8;
-  color: #006b50;
+  background-color: #99E2D0;
+  color: #006B50;
 }
 article img {
   border-radius: 15px 15px 0 0;
@@ -267,7 +271,7 @@ article figcaption {
   margin-top: -5px;
   border-radius: 0 0 15px 15px;
   padding: 15px;
-  background-color: #ffffff;
+  background-color: #FFFFFF;
 }
 article .fa-heart {
   top: 20px;
@@ -275,44 +279,56 @@ article .fa-heart {
 }
 
 /* ********** TABLET ********** */
-@media (min-width: 48rem) {
-  hgroup {
-    padding: 40px 20px 10px;
-  }
-  hgroup h1,
-  hgroup p {
-    width: fit-content;
-  }
-  h1 {
-    font-size: 2rem;
-  }
-  section {
-    padding: 50px;
-  }
-  article {
-    padding: 50px;
-  }
-  article ul {
-    gap: 50px;
-  }
-}
+/**** @media (min-width: $md) {
+    hgroup {
+        padding: 40px 20px 10px;
+
+        h1,
+        p {
+            width: fit-content;
+        }
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    section {
+        padding: 50px;
+    }
+
+    article {
+        padding: 50px;
+
+        ul {
+            gap: 50px;
+
+            // li {
+                // width: calc ((100% - 50px) / 2);
+            // }
+        }
+    }
+} *****/
 /* ********** DESKTOP ********** */
-@media (min-width: 64rem) {
-  h1 {
-    font-size: 2.5rem;
-  }
-  section {
-    margin: auto;
-    max-width: 1080px;
-  }
-  section ol {
-    flex-flow: nowrap;
-  }
-  section h2,
-  section ul {
-    margin: auto;
-    max-width: 1080px;
-  }
-}
+/***** @media (min-width: $lg) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    section {
+        margin: auto;
+        max-width: 1080px;
+
+        ol {
+            flex-flow: nowrap;
+        }
+
+        h2,
+        ul {
+            margin: auto;
+            max-width: 1080px;
+        }
+    }
+} *****/
 
 /*# sourceMappingURL=home.css.map */

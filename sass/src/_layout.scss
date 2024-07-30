@@ -1,28 +1,24 @@
-// ! ********** VARIABLES ********** //
+// ! ********** VARIABLES (FONTS & COLORS) ********** //
 
-// ! ********** BREAKPOINTS ********** //
-$md: 48rem;
-$lg: 64rem;
+/***** $md: 48rem;****/
+/***** $lg: 64rem; *****/
 
-// ! ********** FONTS ********** //
 
-$serif: Shrikhand, serif;
-$sans-serif: Roboto, sans-serif;
+$serif: Shrikhand, serif; //***** Logo & Titles
+$sans-serif: Roboto, sans-serif; //***** Text
 
-// ! ********** COLORS ********** //
- 
-$primary: #9256dc;
-$secondary: #ff7ad9;
-$tertiary: #abe7d8;
-$fourth: #006b50;
+$primary: #9356DC; //***** 
+$secondary: #FF79DA;
+$tertiary: #99E2D0;
+$fourth: #006B50;
 
-$white: #ffffff;
-$silver: #f7f7f7;
-$gray: #eaeaea;
-$lightgrey: #ebebeb;
-$darkgray: #7d7d7d;
+$white: #FFFFFF;
+$silver: #F7F7F7;
+$gray: #EAEAEA;
+$lightgrey: #EBEBEB;
+$darkgray: #7D7D7D;
 $slate: #363636;
-$black: #000000;  
+$black: #000000;
 
 
 // ! ********** Body ********** //
@@ -76,7 +72,7 @@ header {
 }
 
 
-// ! ********** MAIN ********** //
+// ! ********** Main ********** //
 .btn {
     display: block;
     margin: 30px auto;
@@ -146,7 +142,7 @@ footer {
 
 /* ********** TABLET ********** */
 
-@media (min-width: $md) {
+/***** @media (min-width: $md) {
         footer {
             flex-flow: row-reverse;
             place-items: center;
@@ -156,11 +152,11 @@ footer {
             width: 100%;
         }
     }
-}
+} */
 
 /* ********** DESKTOP ********** */
 
-@media (min-width: $lg) {
+/*****@media (min-width: $lg) {
     footer {
         gap: 80px;
 
@@ -172,4 +168,4 @@ footer {
             margin-right: 40px;
         }
     }
-}
+} ******/   
