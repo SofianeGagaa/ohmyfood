@@ -110,13 +110,13 @@ footer ul {
 @media (min-width: 1024px) {
   footer {
     gap: 80px;
-    /*li:nth-child(2) {
-        margin-right: 40px;
-    }*/
   }
   footer ul {
     flex-flow: row;
     place-content: flex-end;
+  }
+  footer li:nth-child(2) {
+    margin-right: 40px;
   }
 }
 article {
@@ -189,7 +189,7 @@ section li {
   overflow: hidden;
   box-sizing: border-box;
   border-radius: 15px;
-  height: 80px;
+  height: 70px;
   background-color: #FFFFFF;
   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
   cursor: pointer;
@@ -216,7 +216,6 @@ section hgroup p {
 section span {
   display: flex;
   gap: 15px;
-  padding: 30px 0 10px 0;
 }
 section b {
   place-self: flex-end;
@@ -239,6 +238,35 @@ section li:focus .fa-circle-check {
 }
 
 /* ********** TABLET ********** */
+@media (min-width: 768px) {
+  article > hgroup {
+    text-align: center;
+  }
+  .heart .fa-heart {
+    position: relative;
+    top: -31px;
+  }
+  .fa-solid .fa-heart {
+    left: 170px;
+  }
+  .fa-regular .fa-heart {
+    left: 195px;
+  }
+  section {
+    margin: auto;
+    width: 634px;
+  }
+}
 /* ********** DESKTOP ********** */
+@media (min-width: 1200px) {
+  article {
+    margin: auto;
+    max-width: 1080px;
+    background-color: #F7F7F7;
+  }
+  main {
+    background-color: #FFFFFF;
+  }
+}
 
 /*# sourceMappingURL=menu.css.map */

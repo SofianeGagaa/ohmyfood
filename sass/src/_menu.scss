@@ -87,7 +87,7 @@ section {
         overflow: hidden;
         box-sizing: border-box;
         border-radius: 15px;
-        height: 80px;
+        height: 70px;
         background-color: $white;
         box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.1);
         cursor: pointer;
@@ -120,7 +120,6 @@ section {
     span {
         display: flex;
         gap: 15px;
-        padding: 30px 0 10px 0;
     }
 
     b {
@@ -148,43 +147,43 @@ section {
 
 /* ********** TABLET ********** */
 
-// @media (min-width: $md) {
-//     article > hgroup {
-//         text-align: center;
-//     }
+@media (min-width: 768px) {
+    article > hgroup {
+        text-align: center;
+    }
 
-//     .heart .fa-heart {
-//         position: relative;
-//         top: -31px;
-//     }
+    .heart .fa-heart {
+        position: relative;
+        top: -31px;
+    }
 
-//     .fa-solid .fa-heart {
-//         left: 170px;
-//     }
+    .fa-solid .fa-heart {
+        left: 170px;
+    }
 
-//     .fa-regular .fa-heart {
-//         left: 195px;
-//     }
+    .fa-regular .fa-heart {
+        left: 195px;
+    }
 
-//     section {
-//         margin: auto;
-//         width: 634px;
-//     }
-// }
+    section {
+        margin: auto;
+        width: 634px;
+    }
+}
 
 /* ********** DESKTOP ********** */
 
-// @media (min-width: $lg) {
-//     article {
-//         margin: auto;
-//         max-width: 1080px;
-//         background-color: $silver;
-//     }
+@media (min-width: 1200px) {
+    article {
+        margin: auto;
+        max-width: 1080px;
+        background-color: $silver;
+    }
 
-//     main {
-//         background-color: $white;
-//     }
-// }
+    main {
+        background-color: $white;
+    }
+}
 
 
 

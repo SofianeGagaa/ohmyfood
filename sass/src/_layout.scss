@@ -1,7 +1,7 @@
 // ! ********** VARIABLES (FONTS & COLORS) ********** //
 
-// $md: 48rem;
-// $lg: 64rem;
+$md: 48rem;
+$lg: 64rem;
 
 
 $serif: Shrikhand, serif; //***** Logo & Titles
@@ -165,8 +165,8 @@ footer {
             flex-flow: row;
             place-content: flex-end;
         }
-        /*li:nth-child(2) {
+        li:nth-child(2) {
             margin-right: 40px;
-        }*/
+        }
     }
 }
