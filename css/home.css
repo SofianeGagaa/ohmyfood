@@ -1,4 +1,3 @@
-@charset "UTF-8";
 body,
 ul,
 figure {
@@ -111,13 +110,13 @@ footer ul {
 @media (min-width: 1024px) {
   footer {
     gap: 80px;
-    /*li:nth-child(2) {
-        margin-right: 40px;
-    }*/
   }
   footer ul {
     flex-flow: row;
     place-content: flex-end;
+  }
+  footer li:nth-child(2) {
+    margin-right: 40px;
   }
 }
 /*.loader {
@@ -164,7 +163,7 @@ form input {
   width: 130px;
   font-size: 1rem;
   background-color: #EBEBEB;
-  color: §slate;
+  color: #363636;
 }
 
 hgroup {
@@ -277,56 +276,47 @@ article .fa-heart {
 }
 
 /* ********** TABLET ********** */
-/**** @media (min-width: $md) {
-    hgroup {
-        padding: 40px 20px 10px;
-
-        h1,
-        p {
-            width: fit-content;
-        }
-    }
-
-    h1 {
-        font-size: 2rem;
-    }
-
-    section {
-        padding: 50px;
-    }
-
-    article {
-        padding: 50px;
-
-        ul {
-            gap: 50px;
-
-            // li {
-                // width: calc ((100% - 50px) / 2);
-            // }
-        }
-    }
-} *****/
+@media (min-width: 48rem) {
+  hgroup {
+    padding: 40px 20px 10px;
+  }
+  hgroup h1,
+  hgroup p {
+    width: fit-content;
+  }
+  h1 {
+    font-size: 2rem;
+  }
+  section {
+    padding: 50px;
+  }
+  article {
+    padding: 50px;
+  }
+  article ul {
+    gap: 50px;
+  }
+  article ul li {
+    width: calc((100% - 50px) / 2);
+  }
+}
 /* ********** DESKTOP ********** */
-/***** @media (min-width: $lg) {
-    h1 {
-        font-size: 2.5rem;
-    }
-
-    section {
-        margin: auto;
-        max-width: 1080px;
-
-        ol {
-            flex-flow: nowrap;
-        }
-
-        h2,
-        ul {
-            margin: auto;
-            max-width: 1080px;
-        }
-    }
-} *****/
+@media (min-width: 64rem) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  section {
+    margin: auto;
+    max-width: 1080px;
+  }
+  section ol {
+    flex-flow: nowrap;
+  }
+  section h2,
+  section ul {
+    margin: auto;
+    max-width: 1080px;
+  }
+}
 
 /*# sourceMappingURL=home.css.map */
