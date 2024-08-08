@@ -134,7 +134,7 @@ article > hgroup h1 {
   z-index: 10;
   margin-top: -40px;
   border-radius: 35px 35px 0 0;
-  padding: 35px 15px 0 0;
+  padding: 35px 0 0 10px;
   font-family: Shrikhand, serif;
   font-size: 1.7rem;
   background-color: #F7F7F7;
@@ -243,14 +243,7 @@ section li:focus .fa-circle-check {
     text-align: center;
   }
   .heart .fa-heart {
-    position: relative;
-    top: -31px;
-  }
-  .fa-solid .fa-heart {
-    left: 170px;
-  }
-  .fa-regular .fa-heart {
-    left: 195px;
+    right: calc(50% - 170px);
   }
   section {
     margin: auto;

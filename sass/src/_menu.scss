@@ -16,7 +16,7 @@ article {
             z-index: 10;
             margin-top: -40px;
             border-radius: 35px 35px 0 0;
-            padding: 35px 15px 0 0;
+            padding: 35px 0 0 10px;
             font-family: $serif;
             font-size: 1.7rem;
             background-color: $silver;
@@ -153,17 +153,10 @@ section {
     }
 
     .heart .fa-heart {
-        position: relative;
-        top: -31px;
+        right: calc(50% - 170px);
+
     }
 
-    .fa-solid .fa-heart {
-        left: 170px;
-    }
-
-    .fa-regular .fa-heart {
-        left: 195px;
-    }
 
     section {
         margin: auto;
