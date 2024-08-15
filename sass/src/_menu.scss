@@ -49,15 +49,15 @@ section {
     padding: 0 10px;
 
     &:nth-child(2) {
-        animation: translate 1s;
+        animation: translate 500ms;
     }
 
     &:nth-child(3) {
-        animation: translate 1.5s;
+        animation: translate 1000ms;
     }
 
     &:nth-child(4) {
-        animation: translate 2s;
+        animation: translate 1500ms;
     }
 
     h2 {
