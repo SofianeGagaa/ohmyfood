@@ -149,9 +149,9 @@ header {
         color: transparent;
     }
 
-    // input: checked ~ .fa-solid {
-        // opacity: 1;
-    // }
+    input:checked ~ .fa-solid {
+        opacity: 1;
+    }
 }
 
 // ! ********** Footer ********** //

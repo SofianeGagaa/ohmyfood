@@ -110,6 +110,9 @@ header img {
   -webkit-background-clip: text;
   color: transparent;
 }
+.heart input:checked ~ .fa-solid {
+  opacity: 1;
+}
 
 footer {
   display: flex;
