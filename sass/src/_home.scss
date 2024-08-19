@@ -14,7 +14,7 @@
         top: calc(50% - 80px);
         left: calc(50% - 80px);
         opacity: 0;
-        color: $tertiary;
+        color: $lightgreen;
         animation: rotate 2s linear;    
     }
 
@@ -107,7 +107,7 @@ section {
             height: 24px;
             counter-increment: li;
             content: counters(li, ".") "";
-            background-color: $primary;
+            background-color: $purple;
             color: $white;
         }
 
@@ -117,7 +117,7 @@ section {
 
         &:hover i,
         &:focus i {
-            color: $primary;
+            color: $purple;
         }
     }
 }
@@ -147,8 +147,8 @@ article {
         right: 15px;
         border-radius: 2px;
         padding: 7px 9px;
-        background-color: $tertiary;
-        color: $fourth;
+        background-color: $lightgreen;
+        color: $darkgreen;
     }
 
     img {
