@@ -29,13 +29,15 @@
 @keyframes translate {
   0% {
     opacity: 0;
+    transform: translateY(0px);
   }
-  60% {
+  50% {
     opacity: 0;
     transform: translateY(-40px);
   }
   100% {
     opacity: 0;
+    transform: translateY(-60px);
   }
 }
 /********** General ***********/
@@ -205,13 +207,13 @@ section {
   padding: 0 10px;
 }
 section:nth-child(2) {
-  animation: translate 500ms;
+  animation: translate 400ms;
 }
 section:nth-child(3) {
-  animation: translate 1000ms;
+  animation: translate 1200ms;
 }
 section:nth-child(4) {
-  animation: translate 1500ms;
+  animation: translate 1800ms;
 }
 section h2 {
   font-size: 1rem;
