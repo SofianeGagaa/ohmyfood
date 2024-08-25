@@ -1,3 +1,4 @@
+/*** LAYOUT ***/
 @keyframes cover {
   0% {
     width: 100%;
@@ -24,10 +25,11 @@
 }
 @keyframes translate {
   0% {
-    oppacity: 0;
+    opacity: 0;
   }
   60% {
     opacity: 0;
+    transform: translateY(-40px);
   }
 }
 body,

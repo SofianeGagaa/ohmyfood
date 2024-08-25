@@ -1,17 +1,16 @@
+/*** LAYOUT ***/
 // ! ********** VARIABLES (FONTS & COLORS) ********** //
 
 $md: 48rem;
 $lg: 64rem;
 
-
 $serif: Shrikhand, serif; //***** Logo & Titles
 $sans-serif: Roboto, sans-serif; //***** Text
 
-$purple: #9356DC; //***** 
-$pink: #FF79DA;
-$lightgreen: #99E2D0;
+$purple: #9356DC; //*** Primary color
+$pink: #FF79DA; //*** Secondary color
+$lightgreen: #99E2D0; //*** Tertiary color
 $darkgreen: #006B50;
-
 $white: #FFFFFF;
 $silver: #F7F7F7;
 $gray: #EAEAEA;
@@ -48,11 +47,11 @@ $black: #000000;
 }
 @keyframes translate {
     0% {
-        oppacity: 0;
+        opacity: 0;
     }
     60% {
         opacity: 0;
-        // transform: translateY(-40px);
+        transform: translateY(-40px);
     }
 }
 
