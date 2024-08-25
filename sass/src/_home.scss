@@ -6,7 +6,7 @@
     z-index: 1000;
     width: 0%;
     height: 0%;
-    background-color: $slate;
+    background-color: $lightgreen;
     animation: cover 2s;
 
     .fa-circle-notch {
@@ -14,10 +14,9 @@
         top: calc(50% - 80px);
         left: calc(50% - 80px);
         opacity: 0;
-        color: $lightgreen;
+        color: $purple;
         animation: rotate 2s linear; 
     }
-
 }
 
 // ! ********** FORM ********** //
@@ -169,7 +168,7 @@ article {
     }
 
     .fa-heart {
-        top: 20px;
+        top: 40px;
         right: 20px;
     }
 }
@@ -179,7 +178,7 @@ article {
 
 /* ********** TABLET ********** */
 
- @media (min-width: $md) {
+ @media (min-width: 768px) {
     hgroup {
         padding: 40px 20px 10px;
 
@@ -204,15 +203,15 @@ article {
             gap: 50px;
          
         li {
-                 width: calc((100% - 50px) / 2);
-             }
+             width: calc((100% - 50px) / 2);
+            }
         }
     }
 } 
 
 /* ********** DESKTOP ********** */
 
-@media (min-width: $lg) {
+@media (min-width: 1024px) {
     h1 {
         font-size: 2.5rem;
     }
