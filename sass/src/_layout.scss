@@ -180,10 +180,10 @@ footer {
 
 /* ********** TABLET ********** */
 @media (min-width: 768px) {
-        footer {
-            flex-flow: row-reverse;
-            place-items: center;
-            padding: 20px 50px;
+    footer {
+        flex-flow: row-reverse;
+        place-items: center;
+        padding: 20px 50px;
 
         ul {
             width: 100%;

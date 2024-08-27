@@ -144,6 +144,8 @@ section {
     }
 }
 
+// ! ********** MEDIA QUERIES ********** //
+
 /* ********** TABLET ********** */
 
 @media (min-width: 768px) {
@@ -153,7 +155,6 @@ section {
 
     .heart .fa-heart {
         right: calc(50% - 170px);
-
     }
 
     section {
